@@ -1,0 +1,11 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+  testing:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . 
