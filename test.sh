@@ -8,3 +8,4 @@ declare regex=" tests, 0 errors, 0 failures, 0 skipped"
 colcon build
 . install/setup.bash
 colcon test
+exit 1
